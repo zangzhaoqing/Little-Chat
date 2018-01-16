@@ -1,0 +1,7 @@
+<rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+
+<button bindtap="bindViewTap" type="primary" class='{{addTop}}'>
+获取发票抬头
+</button>
+<button bindtap="getPhoneNumber" class='{{addTop}}'>微信运动</button>
+<button open-type="contact" class='{{addTop}}'>进入客服会话</button>

@@ -1,0 +1,6 @@
+#myVideo{
+  width:100%;
+}
+.addTop{
+  margin-top:10px;
+}

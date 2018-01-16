@@ -1,0 +1,4 @@
+<!--pages/first/chating.wxml-->
+<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx;line-height:100rpx;font-size:20rpx;text-align:center;">
+{{animate}}
+</view>
