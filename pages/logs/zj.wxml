@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container log-list">
+   <view> Hello {{name}}! </view>
+   <button bindtap="changeName"> Click Me!</button>
+   <view> {{ message }} </view>
+    <wxs src="zj.wxs" module="tools" />
+    <wxs src="Maven.wxs" module="some_comms"></wxs>
+    <view> {{some_comms.bar(some_comms.foo)}} </view>
+    <view> {{some_comms.bar(msg)}} </view>
+</view>

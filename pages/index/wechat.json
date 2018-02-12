@@ -4,7 +4,7 @@
   "navigationBarTitleText": "微信接口功能演示",
   "backgroundColor": "#000",
   "backgroundTextStyle": "light",
-  "enablePullDownRefresh":"true",
-  "disableScroll":"true",
+  "enablePullDownRefresh":false,
+  "disableScroll":true,
   "onReachBottomDistance":"70"
 }

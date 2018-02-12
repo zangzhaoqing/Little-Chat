@@ -1,0 +1,5 @@
+
+var tools=require('Maven.wxs');
+var array = [1, 2, 3, 4, 5, 1, 2, 3, 4];
+var msg = "Hello World!";
+module.exports.message = msg;

@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#3fa435",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "WXS内容的学习",
+  "backgroundColor": "blue",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "onReachBottomDistance": "50"
+}
