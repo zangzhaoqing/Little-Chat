@@ -11,15 +11,33 @@ Page({
     array: [1, 2, 3, 4, 5, 1, 2, 3, 4],
     text: 'init data',
     num: 0,
-    array: [{ text: 'init data' }],
+    // array: [{ text: 'init data' }],
     object: {
       text: 'init data'
-    }
+    },
+    view: 'WEBVIEW',
+    staffA: { firstName: 'Hulk', lastName: 'Hu' },
+    staffB: { firstName: 'Shang', lastName: 'You' },
+    staffC: { firstName: 'Gideon', lastName: 'Lin' },
+    count: 1,
+    id: 1,
+    condition: true,
+    flag :false,
+    a: 1,
+    b: 2,
+    c: 3,
+    length:6
+
   },
   changeName: function (e) {
     // sent data change to view
     this.setData({
       name: 'MINA'
+    })
+  },
+  add: function (e) {
+    this.setData({
+      count: this.data.count + 1
     })
   },
   /**
@@ -120,4 +138,5 @@ Page({
   goodbyeMINA: function () {
     common.sayGoodbye('MINA')
   }
+
 })
