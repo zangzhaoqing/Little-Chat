@@ -35,6 +35,9 @@ App({
       
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    data: 'I am global data',
+    LiJing:'this is a trouble',
+    KongGou:'caonima'
   }
 })
