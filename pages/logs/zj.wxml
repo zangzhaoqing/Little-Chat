@@ -7,5 +7,9 @@
 </view>
 <import src="item.wxml"/>
 <template is="item" data="{{text: 'forbar'}}"/>
+<import src="b.wxml"/>
+<template is="A"/>  <!-- Error! Can not use tempalte when not import A. -->
+<template is="B"/>
+
 </view>
 

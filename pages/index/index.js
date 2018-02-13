@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    
     animite:'animite',
     motto: 'Hello World!',
     userInfo: {},

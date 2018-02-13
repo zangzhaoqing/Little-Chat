@@ -15,3 +15,8 @@
  </view> 
 </view>
 <button bindtap='bindViewTaps'type="primary" class="{{animite}}">动画演示</button>
+<view style="text-align:center">
+<include src="header.wxml"/>
+<view> body </view>
+<include src="footer.wxml"/>
+</view>

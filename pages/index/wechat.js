@@ -44,4 +44,5 @@ Page({
   tap() {
     console.log('tap')
   }
+  
 })
