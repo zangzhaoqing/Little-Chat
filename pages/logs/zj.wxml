@@ -1,24 +1,11 @@
 <!--logs.wxml-->
 <view class="container log-list">
-<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
-<view wx:elif="{{view == 'APP'}}"> APP </view>
-<view wx:else="{{view == 'MINA'}}"> MINA </view>
-<template name="staffName">
-  <view>
-    FirstName: {{firstName}}, LastName: {{lastName}}
-  </view>
-</template>
-
-<template is="staffName" data="{{...staffA}}"></template>
-<template is="staffName" data="{{...staffB}}"></template>
-<template is="staffName" data="{{...staffC}}"></template>
-<view bindtap="add"> {{count}} </view>
-<view id="item-{{id}}"> </view>
-<view wx:if="{{condition}}">12 </view>
-<checkbox checked="{{false}}"> </checkbox>
-<checkbox checked="{{true}}"> </checkbox>
-<view hidden='{{flag?false:true}}'>Hidden</view>
-<view> {{a + b}} + {{c}} + d </view>
-<view wx:if="{{length > 5}}">123</view>
-<view>{{"hello" + name}}</view>
+<view>{{ msg }}</view>
+<button bindtap="clickMe" data-hi="WeChat">点击我</button>
+<view bind:longpress="handleTap1">
+    手指触摸后移动
 </view>
+<import src="item.wxml"/>
+<template is="item" data="{{text: 'forbar'}}"/>
+</view>
+

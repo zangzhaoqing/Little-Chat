@@ -1,58 +1,28 @@
 // pages/logs/zj.js
-var common = require('../common.js');
 Page({
   /**
    * 页面的初始数据
    */  
   data: {
-    name:'WeChat',
-    message: 'Hello MINA!',
-    msg: "'hello wrold' from js",
-    array: [1, 2, 3, 4, 5, 1, 2, 3, 4],
-    text: 'init data',
-    num: 0,
-    // array: [{ text: 'init data' }],
-    object: {
-      text: 'init data'
+    msg:"Hello MINA"
     },
-    view: 'WEBVIEW',
-    staffA: { firstName: 'Hulk', lastName: 'Hu' },
-    staffB: { firstName: 'Shang', lastName: 'You' },
-    staffC: { firstName: 'Gideon', lastName: 'Lin' },
-    count: 1,
-    id: 1,
-    condition: true,
-    flag :false,
-    a: 1,
-    b: 2,
-    c: 3,
-    length:6
-
+    
+  clickMe: function (event) {
+    this.setData({ msg: "Hello World" })
+    console.log(event)
   },
-  changeName: function (e) {
-    // sent data change to view
-    this.setData({
-      name: 'MINA'
-    })
+  handleTap1:function(event){
+   console.log(event);
+   console.log('手指触摸后，超过350ms再离开，如果指定了事件回调函数并触发了这个事件，tap事件将不被触发')
   },
-  add: function (e) {
-    this.setData({
-      count: this.data.count + 1
-    })
-  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var appInstance = getApp()
-    console.log(appInstance)
+   
   },
-  onShareAppMessage: function () {
-    return {
-      title: '自定义转发标题',
-      path: '/index/zj'
-    }
-  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -104,39 +74,24 @@ Page({
   viewTap: function () {
     console.log(Page.prototype.route)
   },
-  changeText: function () {
-    // this.data.text = 'changed data'  // bad, it can not work
-    this.setData({
-      text: 'changed data'
-    })
-  },
+  
   changeNum: function () {
-    this.data.num = 1
-    this.setData({
-      num: this.data.num
-    })
+    
   },
   changeItemInArray: function () {
-    // you can use this way to modify a danamic data path
-    this.setData({
-      'array[0].text': 'changed data'
-    })
+   
   },
   changeItemInObject: function () {
-    this.setData({
-      'object.text': 'changed data'
-    });
+   
   },
   addNewField: function () {
-    this.setData({
-      'newField.text': 'new data'
-    })
+    
   },
   helloMINA: function () {
-    common.sayHello('MINA')
+   
   },
   goodbyeMINA: function () {
-    common.sayGoodbye('MINA')
+    
   }
 
 })
