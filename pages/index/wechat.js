@@ -4,7 +4,16 @@ Page({
 
   },
   onLoad:function(){
-    wx.checkIsSupportSoterAuthentication({
+    Component({
+      properties: {},
+      methods: {
+        onTap: function () {
+          var myEventDetail = {} // detail对象，提供给事件监听函数
+          var myEventOption = {} // 触发事件的选项
+          this.triggerEvent('myevent', myEventDetail, myEventOption)
+        }
+      }
+    }),  wx.checkIsSupportSoterAuthentication({
       success(res) {
         console.log(res);
         // res.supportMode = [] 不具备任何被SOTER支持的生物识别方式
@@ -47,7 +56,7 @@ Page({
   },
   tap() {
     console.log('tap')
-  }
+  },
   
   
-})
+});
