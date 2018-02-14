@@ -4,3 +4,6 @@
 .addTop{
   margin-top:10px;
 }
+:host {
+  color: yellow;
+}

@@ -1,4 +1,8 @@
 Page({
+  onMyEvent: function (e) {
+    e.detail // 自定义组件触发事件时提供的detail对象
+
+  },
   onLoad:function(){
     wx.checkIsSupportSoterAuthentication({
       success(res) {
@@ -44,5 +48,6 @@ Page({
   tap() {
     console.log('tap')
   }
+  
   
 })
