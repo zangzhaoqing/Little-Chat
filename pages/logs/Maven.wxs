@@ -1,4 +1,4 @@
-var foo = "'hello world' from comm.wxs";
+var foo = "'hello world' from Maven.wxs";
 var bar = function (d) {
   return d;
 }
@@ -6,3 +6,17 @@ module.exports = {
   foo: foo,
   bar: bar
 };
+var exp = 10;
+switch (exp) {
+  case "10":
+    console.log("string 10");
+    break;
+  case 10:
+    console.log("number 10");
+    break;
+  case exp:
+    console.log("var exp");
+    break;
+  default:
+    console.log("default");
+}

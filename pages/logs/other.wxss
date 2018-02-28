@@ -1,0 +1,4 @@
+/* pages/logs/other.wxss */
+.zl{
+  text-align:center;
+}

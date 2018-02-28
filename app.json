@@ -4,15 +4,34 @@
     "pages/index/wechat",    
     "pages/logs/logs",
     "pages/first/chating",
-    "pages/logs/zj"   
+    "pages/logs/zj",
+    "pages/logs/other"   
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/cat",
+        "pages/dog"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/apple",
+        "pages/banana"
+      ]
+    }
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"light",                                       
     "navigationBarBackgroundColor": "#3fa435",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"#fff"
+   
   },
   "tabBar": {
+
     "selectedColor": "#1296db",
     "backgroundColor":"#f5f5f5",
     "list": [
@@ -39,7 +58,20 @@
         "text": "更多",
         "iconPath": "pages/images/icon-download.png",
         "selectedIconPath": "pages/images/icon-download-d.png"
+      },
+      {
+        "pagePath": "pages/logs/other",
+        "text": "我的",
+        "iconPath": "pages/images/ico-mine-d.png",
+        "selectedIconPath": "pages/images/ico-mine.png"
       }
     ]
-  }
+  },
+  
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+        
+  },
+  "debug": true
 }

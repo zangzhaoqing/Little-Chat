@@ -12,11 +12,13 @@
   </view> 
    <view class="btn-area"> 
   <navigator url="./wechat?id=1" open-type="reLaunch" hover-class="other-navigator-hover">{{motto}} </navigator>  
- </view> 
+ </view>
+
 </view>
 <button bindtap='bindViewTaps'type="primary" class="{{animite}}">动画演示</button>
 <view style="text-align:center">
 <include src="header.wxml"/>
 <view> body </view>
 <include src="footer.wxml"/>
+<text style="color:{{color}};" class='jk' bindtap="viewTap">{{msg}}</text>
 </view>

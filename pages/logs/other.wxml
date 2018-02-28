@@ -1,0 +1,24 @@
+<wxs src="Maven.wxs" module="some_comms"> </wxs> 
+<view class="zl"> Hello {{name}}! </view>
+<button bindtap="changeName"> Click me! </button>
+<wxs module="foo">
+var some_msg = "Hello World!";
+module.exports = {
+    msg : some_msg,
+}
+</wxs>
+<view class="zl"> {{foo.msg}} </view>
+<view class='zl'>{{some_comms.foo}}</view>
+<view class="wrapper">
+  <slot name="before"></slot>
+  <view>这里是组件的内部细节</view>
+  <slot name="after"></slot>
+</view>
+<view>
+  <component-tag-name>
+    <!-- 这部分内容将被放置在组件 <slot name="before"> 的位置上 -->
+    <view slot="before">这里是插入到组件slot name="before"中的内容</view>
+    <!-- 这部分内容将被放置在组件 <slot name="after"> 的位置上 -->
+    <view slot="after">这里是插入到组件slot name="after"中的内容</view>
+  </component-tag-name>
+</view>

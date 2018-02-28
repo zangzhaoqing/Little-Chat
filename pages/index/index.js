@@ -4,14 +4,16 @@ const app = getApp()
 
 Page({
   data: {
-    
+    msg:'Hello World',
     animite:'animite',
     motto: 'Hello World!',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    color:'red'
   },
   //事件处理函数
+  
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
@@ -91,5 +93,21 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onTabItemTap(item) {
+    console.log(item.index)
+    console.log(item.pagePath)
+    console.log(item.text)
+  },
+  onShareAppMessage:function(e){
+    console.log(e)
+    return {
+      title: '自定义转发标题',
+      path: '/pages/index/wechat'
+    }
+  },
+  viewTap: function () {
+    console.log('view tap!');
+    console.log(Page.prototype.route);
   }
 })
