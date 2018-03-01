@@ -7,22 +7,6 @@
     "pages/logs/zj",
     "pages/logs/other"   
   ],
-  "subPackages": [
-    {
-      "root": "packageA",
-      "pages": [
-        "pages/cat",
-        "pages/dog"
-      ]
-    },
-    {
-      "root": "packageB",
-      "pages": [
-        "pages/apple",
-        "pages/banana"
-      ]
-    }
-  ],
   "window":{
     "backgroundTextStyle":"light",                                       
     "navigationBarBackgroundColor": "#3fa435",
